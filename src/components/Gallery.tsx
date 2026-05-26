@@ -8,7 +8,7 @@ interface GalleryProps {
   propertyId: string;
 }
 
-const Gallery = ({ images, title, propertyId }: GalleryProps) => {
+const Gallery = ({ images: _images, title, propertyId }: GalleryProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
