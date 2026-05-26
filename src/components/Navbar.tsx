@@ -48,7 +48,7 @@ const Navbar = () => {
 
         {/* CTA Button */}
         <a
-          href="https://wa.me/919999999999?text=Hi%2C%20I%20am%20interested%20in%20a%20property"
+          href="https://wa.me/918690906006?text=Hi%2C%20I%20am%20interested%20in%20a%20property"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-primary nav-cta anim-pulse-glow"
@@ -72,7 +72,7 @@ const Navbar = () => {
         <a href="#testimonials" onClick={(e) => handleNavClick(e, 'testimonials')}>Reviews</a>
         <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')}>Contact</a>
         <a
-          href="https://wa.me/919999999999?text=Hi%2C%20I%20am%20interested%20in%20a%20property"
+          href="https://wa.me/918690906006?text=Hi%2C%20I%20am%20interested%20in%20a%20property"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-primary"

@@ -14,14 +14,14 @@ const CTABanner = () => {
           </p>
           <div className="cta-buttons">
             <a
-              href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20find%20my%20dream%20home"
+              href="https://wa.me/918690906006?text=Hi%2C%20I%20want%20to%20find%20my%20dream%20home"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary anim-pulse-glow"
             >
               💬 Chat With Us
             </a>
-            <a href="tel:+919999999999" className="btn btn-outline">
+            <a href="tel:+918690906006" className="btn btn-outline">
               📞 Call Now
             </a>
           </div>

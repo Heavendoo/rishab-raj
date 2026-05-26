@@ -52,14 +52,14 @@ const AboutAgent = () => {
 
             <div className="about-buttons">
               <a
-                href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20know%20more%20about%20Rajat%20Properties"
+                href="https://wa.me/918690906006?text=Hi%2C%20I%20want%20to%20know%20more%20about%20Rajat%20Properties"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-whatsapp"
               >
                 💬 Chat on WhatsApp
               </a>
-              <a href="tel:+919999999999" className="btn btn-outline">
+              <a href="tel:+918690906006" className="btn btn-outline">
                 📞 Call Us
               </a>
             </div>

@@ -59,7 +59,7 @@ const InquiryForm = ({ propertyTitle }: InquiryFormProps) => {
       <div className="form-divider">or</div>
 
       <a
-        href={`https://wa.me/919999999999?text=${whatsappMessage}`}
+        href={`https://wa.me/918690906006?text=${whatsappMessage}`}
         target="_blank"
         rel="noopener noreferrer"
         className="btn btn-whatsapp whatsapp-btn"

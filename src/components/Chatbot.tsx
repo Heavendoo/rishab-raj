@@ -34,7 +34,7 @@ Rules:
 - Only recommend properties from the list above
 - If asked about a property not in the list, say "We don't currently have that listing, but I can help you find something similar!"
 - Never make up properties or prices
-- If someone wants to talk to a human, give the number: +91 99999 99999
+- If someone wants to talk to a human, give the number: +91 86909 06006
 - Always be helpful and guide toward scheduling a visit
 - Keep responses SHORT and crisp — max 2-3 lines unless listing properties
 - Use Hinglish (mix of Hindi and English) for a friendly Indian tone. Example: "Bhai, yeh property ekdum premium hai!" or "Aapka budget kitna hai? Main best options dikhata hoon."`;
@@ -144,7 +144,7 @@ const Chatbot = () => {
         ...prev,
         {
           role: 'assistant',
-          content: 'I\'m having trouble connecting right now. Please try again or call us at +91 99999 99999.',
+          content: 'I\'m having trouble connecting right now. Please try again or call us at +91 86909 06006.',
           time: getTime(),
         },
       ]);
@@ -308,7 +308,7 @@ function getFallbackResponse(input: string): string {
   }
 
   if (lower.includes('call') || lower.includes('human') || lower.includes('agent') || lower.includes('talk')) {
-    return '📞 You can reach our team at **+91 99999 99999** (Mon–Sat, 10AM–7PM). Or share your name & number and we\'ll call you back!';
+    return '📞 You can reach our team at **+91 86909 06006** (Mon–Sat, 10AM–7PM). Or share your name & number and we\'ll call you back!';
   }
 
   if (lower.includes('visit') || lower.includes('schedule') || lower.includes('see')) {
