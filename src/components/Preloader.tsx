@@ -14,7 +14,7 @@ const Preloader = () => {
 
   return (
     <div className={`preloader ${hidden ? 'hidden' : ''}`}>
-      <div className="preloader-logo">◆ Luxe Estates</div>
+      <div className="preloader-logo">◆ Rajat Properties</div>
       <div className="preloader-spinner" />
     </div>
   );

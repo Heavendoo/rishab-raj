@@ -16,7 +16,7 @@ const propertyKnowledge = properties
   )
   .join('\n');
 
-const SYSTEM_PROMPT = `You are Luxe — the AI assistant for Luxe Estates, a premium real estate consultancy in India. You help potential homebuyers find their dream property.
+const SYSTEM_PROMPT = `You are Rajat — the AI assistant for Rajat Properties, a premium real estate consultancy in India. You help potential homebuyers find their dream property.
 
 Your personality: Warm, professional, knowledgeable, and concise. Use a friendly tone. Keep responses short (2-4 sentences max unless listing properties). Use ₹ for prices.
 
@@ -53,7 +53,7 @@ const Chatbot = () => {
     {
       role: 'assistant',
       content:
-        'Hello! 👋 I\'m Luxe, your AI property assistant. I can help you find your dream home, answer questions about our listings, or estimate your EMI. How can I help you today?',
+        'Hello! 👋 I\'m Rajat, your AI property assistant. I can help you find your dream home, answer questions about our listings, or estimate your EMI. How can I help you today?',
       time: getTime(),
     },
   ]);
@@ -187,7 +187,7 @@ const Chatbot = () => {
             <div className="chat-header-info">
               <div className="chat-avatar">◆</div>
               <div className="chat-header-text">
-                <h4>Luxe AI Assistant</h4>
+                <h4>Rajat AI Assistant</h4>
                 <p>● Online — Powered by AI</p>
               </div>
             </div>
@@ -300,7 +300,7 @@ function getFallbackResponse(input: string): string {
   }
 
   if (lower.includes('hi') || lower.includes('hello') || lower.includes('hey')) {
-    return 'Hey there! 👋 Welcome to Luxe Estates. I can help you find apartments, villas, plots, or commercial spaces across 5 major cities. What are you looking for?';
+    return 'Hey there! 👋 Welcome to Rajat Properties. I can help you find apartments, villas, plots, or commercial spaces across 5 major cities. What are you looking for?';
   }
 
   if (lower.includes('price') || lower.includes('cost') || lower.includes('how much')) {

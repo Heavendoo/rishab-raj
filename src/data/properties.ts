@@ -1,5 +1,5 @@
 /* ===================================================
-   LUXE ESTATES — Mock Property Data
+   Rajat Properties — Mock Property Data
    =================================================== */
 
 export interface Property {
@@ -322,7 +322,7 @@ export const testimonials: Testimonial[] = [
     name: 'Rajesh & Priya Sharma',
     property: 'Purchased 3 BHK in Baner',
     rating: 5,
-    review: 'Luxe Estates made our dream home a reality. From the first consultation to the final handover, the experience was seamless. Their team guided us through every step — financing, legal checks, and registration. Truly world-class service!',
+    review: 'Rajat Properties made our dream home a reality. From the first consultation to the final handover, the experience was seamless. Their team guided us through every step — financing, legal checks, and registration. Truly world-class service!',
     image: '/images/client-1.webp'
   },
   {
@@ -330,7 +330,7 @@ export const testimonials: Testimonial[] = [
     name: 'Anita Deshmukh',
     property: 'Invested in Commercial Space',
     rating: 5,
-    review: 'As a first-time investor, I was nervous about commercial real estate. The team at Luxe Estates provided expert guidance and helped me find a property with excellent ROI potential. Their market knowledge is unmatched.',
+    review: 'As a first-time investor, I was nervous about commercial real estate. The team at Rajat Properties provided expert guidance and helped me find a property with excellent ROI potential. Their market knowledge is unmatched.',
     image: '/images/client-2.webp'
   },
   {
@@ -338,7 +338,7 @@ export const testimonials: Testimonial[] = [
     name: 'Vikram & Sneha Patel',
     property: 'Purchased Villa in Whitefield',
     rating: 5,
-    review: 'We searched for months before finding Luxe Estates. They understood exactly what we wanted and showed us properties that matched our vision perfectly. The villa we bought exceeded our expectations. Highly recommended!',
+    review: 'We searched for months before finding Rajat Properties. They understood exactly what we wanted and showed us properties that matched our vision perfectly. The villa we bought exceeded our expectations. Highly recommended!',
     image: '/images/client-3.webp'
   }
 ];

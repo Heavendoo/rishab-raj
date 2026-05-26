@@ -7,7 +7,7 @@ const WhyChooseUs = () => {
       <div className="container">
         <div className="section-header">
           <h2>Why Choose Us</h2>
-          <p>Experience the Luxe Estates difference — where every detail is crafted for your peace of mind</p>
+          <p>Experience the Rajat Properties difference — where every detail is crafted for your peace of mind</p>
         </div>
 
         <div className="why-grid">

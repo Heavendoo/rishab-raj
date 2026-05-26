@@ -24,7 +24,7 @@ const Testimonials = () => {
       <div className="container">
         <div className="section-header">
           <h2>What Our Clients Say</h2>
-          <p>Real stories from real homeowners who trusted Luxe Estates</p>
+          <p>Real stories from real homeowners who trusted Rajat Properties</p>
         </div>
 
         <div className="testimonial-slider">

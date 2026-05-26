@@ -1,5 +1,5 @@
 /* ===================================================
-   LUXE ESTATES — Property Image Mapping
+   Rajat Properties — Property Image Mapping
    Each property gets unique Unsplash photos
    =================================================== */
 

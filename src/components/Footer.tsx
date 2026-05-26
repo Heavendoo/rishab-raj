@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="footer-col">
             <div className="footer-logo">
               <span className="logo-icon">◆</span>
-              <span>Luxe Estates</span>
+              <span>Rajat Properties</span>
             </div>
             <p className="footer-desc">
               Premium real estate consultancy helping families find their dream
@@ -59,7 +59,7 @@ const Footer = () => {
             </div>
             <div className="contact-item">
               <span className="contact-icon">✉️</span>
-              <span>info@luxeestates.in</span>
+              <span>info@rajatproperties.in</span>
             </div>
             <div className="contact-item">
               <span className="contact-icon">🕐</span>
@@ -70,9 +70,9 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="footer-bottom">
-          <p>© 2026 Luxe Estates. All Rights Reserved.</p>
+          <p>© 2026 Rajat Properties. All Rights Reserved.</p>
           <p>
-            Crafted with ♥ by <a href="#">Luxe Digital</a>
+            Crafted with ♥ by <a href="#">Rajat Digital</a>
           </p>
         </div>
       </div>

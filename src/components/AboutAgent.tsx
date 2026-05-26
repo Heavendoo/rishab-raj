@@ -9,7 +9,7 @@ const AboutAgent = () => {
           <div className="about-image-wrapper">
             <img
               src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80"
-              alt="Luxe Estates - Real Estate Expert"
+              alt="Rajat Properties - Real Estate Expert"
               className="about-image"
               loading="lazy"
             />
@@ -18,11 +18,11 @@ const AboutAgent = () => {
           {/* Content */}
           <div className="about-content">
             <span className="about-label">✦ About Us</span>
-            <h2 className="about-name">Luxe Estates</h2>
+            <h2 className="about-name">Rajat Properties</h2>
             <p className="about-role">Premium Real Estate Consultancy · Est. 2014</p>
 
             <p className="about-text">
-              With over 12 years of experience in India's real estate market, Luxe Estates
+              With over 12 years of experience in India's real estate market, Rajat Properties
               has helped hundreds of families find their perfect homes. We specialize in
               luxury properties across major metropolitan cities, offering end-to-end
               support from property search to possession. Our commitment to transparency,
@@ -52,7 +52,7 @@ const AboutAgent = () => {
 
             <div className="about-buttons">
               <a
-                href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20know%20more%20about%20Luxe%20Estates"
+                href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20know%20more%20about%20Rajat%20Properties"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-whatsapp"

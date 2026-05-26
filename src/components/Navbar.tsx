@@ -34,7 +34,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="nav-logo">
           <span className="logo-icon">◆</span>
-          <span>Luxe Estates</span>
+          <span>Rajat Properties</span>
         </Link>
 
         {/* Desktop Navigation */}
