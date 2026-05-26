@@ -1,0 +1,265 @@
+/* ===================================================
+   LUXE ESTATES — Responsive Breakpoints
+   =================================================== */
+
+/* ---------- Tablet (1024px) ---------- */
+@media (max-width: 1024px) {
+  :root {
+    --fs-hero: 3.5rem;
+    --fs-3xl: 2rem;
+    --space-section: 5rem;
+  }
+
+  .property-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-item:nth-child(2)::after {
+    display: none;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .about-image {
+    height: 350px;
+  }
+
+  .detail-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-sidebar {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+  }
+
+  .amenity-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ---------- Small Tablet (768px) ---------- */
+@media (max-width: 768px) {
+  :root {
+    --fs-hero: 2.8rem;
+    --fs-3xl: 1.75rem;
+    --fs-2xl: 1.5rem;
+    --space-section: 4rem;
+    --nav-height: 70px;
+  }
+
+  .container {
+    padding: 0 var(--space-md);
+  }
+
+  /* Navbar */
+  .nav-links {
+    display: none;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hero Search */
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-field {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    width: 100%;
+  }
+
+  .search-field:last-of-type {
+    border-bottom: none;
+  }
+
+  .search-btn {
+    width: 100%;
+  }
+
+  /* Stats */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+
+  .stat-item::after {
+    display: none;
+  }
+
+  .stat-number {
+    font-size: var(--fs-2xl);
+  }
+
+  /* Cards */
+  .property-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* Why Us */
+  .why-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  /* Categories */
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category-card {
+    height: 200px;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-sm);
+    text-align: center;
+  }
+
+  /* Detail Page */
+  .detail-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .prop-header {
+    flex-direction: column;
+  }
+
+  .specs-bar {
+    flex-wrap: wrap;
+  }
+
+  .spec-item {
+    min-width: 100px;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .amenity-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-main {
+    height: 300px;
+  }
+}
+
+/* ---------- Mobile (480px) ---------- */
+@media (max-width: 480px) {
+  :root {
+    --fs-hero: 2.2rem;
+    --fs-3xl: 1.5rem;
+    --fs-2xl: 1.25rem;
+    --space-section: 3rem;
+  }
+
+  h1 { font-size: var(--fs-2xl); }
+
+  .hero-content {
+    padding: var(--space-md);
+  }
+
+  .hero-tagline {
+    font-size: var(--fs-sm);
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: var(--fs-xs);
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-card {
+    height: 180px;
+  }
+
+  .about-achievements {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .amenity-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-main {
+    height: 220px;
+  }
+
+  .gallery-thumbs {
+    gap: 4px;
+  }
+
+  .thumb-item {
+    width: 70px;
+    height: 50px;
+  }
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .back-to-top {
+    width: 38px;
+    height: 38px;
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .lightbox-nav {
+    font-size: 1.5rem;
+    padding: var(--space-sm);
+  }
+}

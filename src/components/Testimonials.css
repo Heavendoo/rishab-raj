@@ -1,0 +1,104 @@
+/* ===================================================
+   LUXE ESTATES — Testimonials Styles
+   =================================================== */
+
+.testimonials {
+  padding: var(--space-section) 0;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.testimonial-slider {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.testimonial-card {
+  min-width: 100%;
+  padding: var(--space-2xl);
+  text-align: center;
+}
+
+.client-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--gold);
+  margin: 0 auto var(--space-lg);
+}
+
+.stars {
+  color: var(--gold);
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-lg);
+  letter-spacing: 4px;
+}
+
+.review-text {
+  font-family: var(--font-accent);
+  font-size: var(--fs-xl);
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.6;
+  margin-bottom: var(--space-xl);
+  position: relative;
+}
+
+.review-text::before {
+  content: '"';
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  color: var(--gold);
+  opacity: 0.3;
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  line-height: 1;
+}
+
+.client-name {
+  font-family: var(--font-heading);
+  font-size: var(--fs-md);
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.client-property {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+
+/* Dots Navigation */
+.testimonial-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-xl);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--navy-light);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all var(--transition);
+  padding: 0;
+}
+
+.dot.active {
+  background: var(--gold);
+  border-color: var(--gold);
+  transform: scale(1.3);
+}

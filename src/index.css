@@ -1,0 +1,345 @@
+/* ===================================================
+   LUXE ESTATES — Global Design System
+   Theme: Dark Luxury (Gold + Navy)
+   =================================================== */
+
+/* ---------- Google Fonts ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+/* ---------- CSS Custom Properties ---------- */
+:root {
+  /* Colors */
+  --gold:             #C8A951;
+  --gold-light:       #E8D48B;
+  --gold-dark:        #A68B3C;
+  --navy:             #1A1A2E;
+  --navy-light:       #16213E;
+  --surface:          #0F3460;
+  --bg:               #0A0A1A;
+  --bg-card:          rgba(22, 33, 62, 0.6);
+  --bg-glass:         rgba(15, 52, 96, 0.25);
+  --text:             #FFFFFF;
+  --text-muted:       #B8B8D0;
+  --text-dim:         #6B6B80;
+  --success:          #4CAF50;
+  --whatsapp:         #25D366;
+  --danger:           #E74C3C;
+  --border:           rgba(200, 169, 81, 0.15);
+  --border-hover:     rgba(200, 169, 81, 0.4);
+
+  /* Gradients */
+  --gradient-gold:    linear-gradient(135deg, #C8A951, #E8D48B);
+  --gradient-hero:    linear-gradient(180deg, rgba(10, 10, 26, 0.3) 0%, rgba(10, 10, 26, 0.85) 100%);
+  --gradient-card:    linear-gradient(145deg, rgba(22, 33, 62, 0.8), rgba(10, 10, 26, 0.9));
+  --gradient-cta:     linear-gradient(135deg, #1A1A2E 0%, #0F3460 50%, #1A1A2E 100%);
+
+  /* Typography */
+  --font-heading:     'Playfair Display', Georgia, serif;
+  --font-body:        'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-accent:      'Cormorant Garamond', Georgia, serif;
+
+  /* Font Sizes */
+  --fs-xs:            0.75rem;
+  --fs-sm:            0.875rem;
+  --fs-base:          1rem;
+  --fs-md:            1.125rem;
+  --fs-lg:            1.25rem;
+  --fs-xl:            1.5rem;
+  --fs-2xl:           2rem;
+  --fs-3xl:           2.5rem;
+  --fs-4xl:           3rem;
+  --fs-5xl:           3.5rem;
+  --fs-hero:          4.5rem;
+
+  /* Spacing */
+  --space-xs:         0.25rem;
+  --space-sm:         0.5rem;
+  --space-md:         1rem;
+  --space-lg:         1.5rem;
+  --space-xl:         2rem;
+  --space-2xl:        3rem;
+  --space-3xl:        4rem;
+  --space-4xl:        6rem;
+  --space-section:    7rem;
+
+  /* Layout */
+  --max-width:        1280px;
+  --nav-height:       80px;
+
+  /* Borders & Radius */
+  --radius-sm:        6px;
+  --radius-md:        12px;
+  --radius-lg:        20px;
+  --radius-full:      9999px;
+
+  /* Shadows */
+  --shadow-sm:        0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md:        0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-lg:        0 8px 40px rgba(0, 0, 0, 0.5);
+  --shadow-gold:      0 4px 25px rgba(200, 169, 81, 0.2);
+  --shadow-glow:      0 0 30px rgba(200, 169, 81, 0.15);
+
+  /* Transitions */
+  --transition-fast:  0.2s ease;
+  --transition:       0.3s ease;
+  --transition-slow:  0.5s ease;
+  --transition-spring: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* ---------- CSS Reset ---------- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--text);
+  background-color: var(--bg);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ---------- Base Typography ---------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+h1 { font-size: var(--fs-hero); }
+h2 { font-size: var(--fs-3xl); }
+h3 { font-size: var(--fs-2xl); }
+h4 { font-size: var(--fs-xl); }
+h5 { font-size: var(--fs-lg); }
+h6 { font-size: var(--fs-md); }
+
+p {
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--gold);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: var(--fs-base);
+}
+
+input, select, textarea {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  outline: none;
+  border: none;
+}
+
+/* ---------- Layout Utilities ---------- */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-xl);
+}
+
+.section {
+  padding: var(--space-section) 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.section-header h2 {
+  margin-bottom: var(--space-md);
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--gradient-gold);
+  border-radius: var(--radius-full);
+}
+
+.section-header p {
+  margin-top: var(--space-lg);
+  font-size: var(--fs-md);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- Gold Accent Text ---------- */
+.text-gold {
+  color: var(--gold);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-accent {
+  font-family: var(--font-accent);
+  font-style: italic;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: 14px 32px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: var(--fs-sm);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: var(--gradient-gold);
+  color: var(--navy);
+  box-shadow: var(--shadow-gold);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 30px rgba(200, 169, 81, 0.35);
+  color: var(--navy);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--gold);
+  border: 1.5px solid var(--gold);
+}
+
+.btn-outline:hover {
+  background: var(--gold);
+  color: var(--navy);
+  transform: translateY(-2px);
+}
+
+.btn-whatsapp {
+  background: var(--whatsapp);
+  color: #fff;
+}
+
+.btn-whatsapp:hover {
+  background: #20BA5C;
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+/* ---------- Glassmorphism Card ---------- */
+.glass-card {
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: all var(--transition);
+}
+
+.glass-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-4px);
+}
+
+/* ---------- Badge ---------- */
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: var(--radius-full);
+}
+
+.badge-premium {
+  background: var(--gradient-gold);
+  color: var(--navy);
+}
+
+.badge-new {
+  background: rgba(76, 175, 80, 0.2);
+  color: var(--success);
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.badge-hot {
+  background: rgba(231, 76, 60, 0.2);
+  color: var(--danger);
+  border: 1px solid rgba(231, 76, 60, 0.3);
+}
+
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--navy-light);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-dark);
+}
+
+/* ---------- Selection ---------- */
+::selection {
+  background: rgba(200, 169, 81, 0.3);
+  color: var(--text);
+}

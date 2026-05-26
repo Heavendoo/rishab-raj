@@ -1,0 +1,38 @@
+/* ===================================================
+   LUXE ESTATES — Featured Properties Section
+   =================================================== */
+
+.featured {
+  padding: var(--space-section) 0;
+  background: var(--bg);
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+.featured-cta {
+  text-align: center;
+  margin-top: var(--space-3xl);
+}
+
+.no-results {
+  text-align: center;
+  padding: var(--space-4xl) var(--space-xl);
+}
+
+.no-results-icon {
+  font-size: 4rem;
+  margin-bottom: var(--space-lg);
+}
+
+.no-results h3 {
+  font-size: var(--fs-xl);
+  margin-bottom: var(--space-sm);
+}
+
+.no-results p {
+  color: var(--text-muted);
+}

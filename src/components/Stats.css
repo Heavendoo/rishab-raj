@@ -1,0 +1,62 @@
+/* ===================================================
+   LUXE ESTATES — Stats Section Styles
+   =================================================== */
+
+.stats {
+  position: relative;
+  padding: var(--space-3xl) 0;
+  background: var(--gradient-card);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xl);
+}
+
+.stat-item {
+  text-align: center;
+  padding: var(--space-xl);
+  position: relative;
+}
+
+/* Divider between items */
+.stat-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 50%;
+  background: var(--border);
+}
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: var(--fs-4xl);
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: var(--space-sm);
+}
+
+.stat-prefix {
+  font-size: var(--fs-2xl);
+  margin-right: 2px;
+}
+
+.stat-suffix {
+  font-size: var(--fs-xl);
+  color: var(--gold-light);
+}
+
+.stat-label {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}

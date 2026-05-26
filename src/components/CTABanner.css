@@ -1,0 +1,47 @@
+/* ===================================================
+   LUXE ESTATES — CTA Banner Styles
+   =================================================== */
+
+.cta {
+  position: relative;
+  padding: var(--space-4xl) 0;
+  background: var(--gradient-cta);
+  overflow: hidden;
+}
+
+.cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 30% 50%, rgba(200, 169, 81, 0.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.cta-content {
+  position: relative;
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.cta-title {
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+}
+
+.cta-subtitle {
+  font-size: var(--fs-md);
+  color: var(--text-muted);
+  margin-bottom: var(--space-2xl);
+}
+
+.cta-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+}

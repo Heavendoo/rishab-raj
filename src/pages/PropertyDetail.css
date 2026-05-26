@@ -1,0 +1,201 @@
+/* ===================================================
+   LUXE ESTATES — Property Detail Page Styles
+   =================================================== */
+
+.property-detail {
+  padding-top: calc(var(--nav-height) + var(--space-2xl));
+  padding-bottom: var(--space-section);
+  background: var(--bg);
+  min-height: 100vh;
+}
+
+.detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+/* Left Column */
+.detail-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+/* Header */
+.prop-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-xl);
+}
+
+.prop-title {
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+}
+
+.prop-location {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--fs-md);
+  color: var(--text-muted);
+}
+
+.prop-price {
+  font-family: var(--font-heading);
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+  color: var(--gold);
+  white-space: nowrap;
+}
+
+/* Specs Bar */
+.specs-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: var(--gradient-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.spec-item {
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  padding: var(--space-sm);
+  border-right: 1px solid var(--border);
+}
+
+.spec-item:last-child {
+  border-right: none;
+}
+
+.spec-icon {
+  font-size: var(--fs-xl);
+  margin-bottom: var(--space-xs);
+}
+
+.spec-value {
+  font-size: var(--fs-md);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.spec-label {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Description */
+.prop-description {
+  padding: var(--space-xl);
+  background: var(--gradient-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.prop-description h3 {
+  font-size: var(--fs-xl);
+  margin-bottom: var(--space-md);
+}
+
+.desc-text {
+  font-size: var(--fs-base);
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+/* Amenities */
+.amenities {
+  padding: var(--space-xl);
+  background: var(--gradient-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.amenities h3 {
+  font-size: var(--fs-xl);
+  margin-bottom: var(--space-lg);
+}
+
+.amenity-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+}
+
+.amenity-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--fs-sm);
+  color: var(--text);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-glass);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.amenity-icon {
+  color: var(--gold);
+}
+
+/* Map */
+.prop-map {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.prop-map iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+/* Sidebar */
+.detail-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  position: sticky;
+  top: calc(var(--nav-height) + var(--space-xl));
+}
+
+/* Back Button */
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+  margin-bottom: var(--space-lg);
+  cursor: pointer;
+  transition: color var(--transition);
+}
+
+.back-btn:hover {
+  color: var(--gold);
+}
+
+/* Not Found */
+.not-found {
+  text-align: center;
+  padding: var(--space-4xl) 0;
+}
+
+.not-found h2 {
+  margin-bottom: var(--space-md);
+}
+
+.not-found p {
+  margin-bottom: var(--space-xl);
+}
